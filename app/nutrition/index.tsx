@@ -49,7 +49,7 @@ export default function Nutrition() {
 
       const suplements = `${data?.suplementos.map(item => `- ${item}`)}`
 
-      const foods = `${data?.refeicoes.map(item => `\n- Nome: ${item.nome}\n- Horário: ${item.horario}\n- Alimentos: ${item.alimentos.map(alimento => `${alimento}`)}`)}`
+      const foods = `${data?.refeicoes.map(item => `\n- Refeição: ${item.nome}\n- Horário: ${item.horario}\n- Alimentos: ${item.alimentos.map(alimento => `${alimento}`)}`)}`
       
       const message = `Dieta: ${data?.nome}\n - Objetivo: ${data?.objetivo}\n\n${foods}\n\n- Dica de suplementos: ${suplements}`
 
